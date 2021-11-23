@@ -120,7 +120,7 @@ var includesUsername = password == username;
 console.log(includesUsername);
 
 var usernameTooLong = username > 20;
-console.log(usernameTooLong)
+console.log(usernameTooLong);
 
 var noWhiteSpace = username.startsWith(" ", 0) || password.startsWith(" ", 0)
-console.log(noWhiteSpace)
+console.log(noWhiteSpace);
