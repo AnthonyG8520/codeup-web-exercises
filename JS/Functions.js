@@ -98,7 +98,7 @@ console.log(calculateTip(.1, 20));
 let originalPrice = 30;
 let discount = .5;
 let discountAmt = originalPrice * discount;
-function appluDiscount(x, y){
+function applyDiscount(x, y){
     return x - y
 }
-console.log(appluDiscount(originalPrice, discountAmt))
+console.log(applyDiscount(originalPrice, discountAmt))
