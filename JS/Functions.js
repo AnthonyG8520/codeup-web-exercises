@@ -8,6 +8,10 @@
  * Example
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
+function sayHello(name){
+    return ("Hello, " + name)
+};
+console.log(sayHello("Anthony"));
 
 /**
  * TODO:
@@ -16,6 +20,8 @@
  *
  * console.log 'helloMessage' to check your work
  */
+let helloMessage = sayHello("Anthony");
+console.log(helloMessage);
 
 /**
  * TODO:
@@ -23,6 +29,8 @@
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+let myName = "Anthony";
+console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -45,7 +53,11 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
-
+function isTwo(x){
+    return x === 2
+};
+console.log(isTwo(2));
+console.log(isTwo(random));
 /**
  * TODO:
  * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -57,6 +69,10 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
+function calculateTip(x, y){
+    return x * y
+};
+console.log(calculateTip(.1, 20));
 
 /**
  * TODO:
@@ -79,3 +95,10 @@ var random = Math.floor((Math.random() * 3) + 1);
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+let originalPrice = 30;
+let discount = .5;
+let discountAmt = originalPrice * discount;
+function appluDiscount(x, y){
+    return x - y
+}
+console.log(appluDiscount(originalPrice, discountAmt))
