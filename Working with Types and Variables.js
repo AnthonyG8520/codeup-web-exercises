@@ -1,7 +1,7 @@
 var a = 1;
 var b = a++;
 var c = ++a;
-console.log(a,b,c)
+console.log(a, b, c)
 // what is the value of a, b, and c?
 
 var d = "hello";
@@ -9,7 +9,7 @@ var e = false;
 
 d++;
 e++;
-console.log(d,e)
+console.log(d, e)
 
 var perplexed; // perplexed is undefined (no value is assigned)
 perplexed + 2;
@@ -86,9 +86,9 @@ sample = sample.replace("Students", "class");
 console.log(sample);
 console.log(sample.indexOf("C"))
 let cIndex = sample.indexOf("C")
-console.log(sample.substring(cIndex, (sample.indexOf("p") +1)));
+console.log(sample.substring(cIndex, (sample.indexOf("p") + 1)));
 
-//Exercise 3
+//Exercise 3.1
 //Price of movie per day
 var moviePrice = 3;
 // Days rented
@@ -96,31 +96,46 @@ var littleMermaid = 3;
 var brotherBear = 5;
 var hercules = 1;
 
-console.log("The Little Mermaid cost " + moviePrice * littleMermaid +" dollars to rent.");
+console.log("The Little Mermaid cost " + moviePrice * littleMermaid + " dollars to rent.");
 console.log("Brother Bear cost " + moviePrice * brotherBear + " dollars to rent.");
 console.log("Hercules cost " + moviePrice * hercules + " dollars to rent.");
 
+//Exercise 3.2
 var googlePay = 400 * 6;
 var amazonPay = 380 * 4;
 var facebookPay = 350 * 10;
 var weeksPay = googlePay + amazonPay + facebookPay;
 console.log(weeksPay)
-// 2 more exercises left
+
+//Exercise 3.3
+var isNotFull = true;
+var doesNotConflict = false;
+
+if(isNotFull && doesNotConflict){
+    console.log("Can enroll.")
+}else{
+    console.log("Can't enroll.")
+}
+
+//Exercise 3.4
+var itemsBought = 5;
+var premiumMember = false;
+var offerValid = true;
+console.log((premiumMember || itemsBought > 2) && offerValid)
 
 
-
-
+//Exercise 4
 var username = 'codeup';
 var password = 'notastrongpassword';
 
 var passwordLongEnough = password.length >= 5;
 console.log(passwordLongEnough);
 
-var includesUsername = password == username;
+var includesUsername = password.includes(username);
 console.log(includesUsername);
 
 var usernameTooLong = username > 20;
 console.log(usernameTooLong);
 
-var noWhiteSpace = username.startsWith(" ", 0) || password.startsWith(" ", 0)
+var noWhiteSpace = username.trim() == username && password.trim() == password
 console.log(noWhiteSpace);
