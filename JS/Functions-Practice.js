@@ -21,24 +21,33 @@ isAGoodDayToFly(false, 5)
 function add(x, y){
     return x + y
 }
-console.log(add(5, 4))
+console.log(add(5, 4));
 
 function subtract(x, y){
     return x - y
 }
-console.log(subtract(20, 10))
+console.log(subtract(20, 10));
 
 function multiply(x, y){
     return x * y
 }
-console.log(multiply(5, 5))
+console.log(multiply(5, 5));
 
 function divide(x, y){
     return x / y
 }
-console.log(divide(10, 2))
+console.log(divide(10, 2));
 
 function remainder(x, y){
     return x % y
 }
-console.log(remainder(6, 4))
+console.log(remainder(6, 4));
+
+var someText = ("Here is some text.");
+
+//String reverse warmup 11/29/21
+//function reverseString(string) {
+ //   .split() .reverse() .join()
+//}
+
+
