@@ -154,7 +154,8 @@ var luckyNumber = Math.floor(Math.random() * 6);
  *
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
- */ function isOdd(x){
+ */
+function isOdd(x){
      if (x % 2 == 1){
          return ("That number is odd.");
      }
@@ -178,7 +179,7 @@ function notANumber(x){
      }
 }
 
-confirm("Would you like to put in A number?")
+confirm("Would you like to put in A number?") // true / false
 let userNumber = prompt("Enter A number.", "")
 alert(notANumber(userNumber))
 alert(isOdd(userNumber))
