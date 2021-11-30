@@ -79,4 +79,4 @@ switch (grade){
     default:
         console.log("F");
 }
-// This statement (switch) doesn't accept expressions.^
+// This statement (switch) doesn't accept expressions.^ (As shown) ONLY LITERALS
