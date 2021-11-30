@@ -45,7 +45,7 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-//analyzeColor(console.log(randomColor))
+console.log(analyzeColor(randomColor))
 
 /**
  * TODO:
@@ -179,7 +179,7 @@ function notANumber(x){
      }
 }
 
-confirm("Would you like to put in A number?") // true / false
+confirm("Would you like to put in A number?")
 let userNumber = prompt("Enter A number.", "")
 alert(notANumber(userNumber))
 alert(isOdd(userNumber))

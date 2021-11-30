@@ -107,4 +107,4 @@ function thatsNotMyName(name) {
         return ("that's me!, I'm " + name)
     } else return ("that's not my name");
 }
-console.log(thatsNotMyName("anthony"))
+console.log(thatsNotMyName("Anthony"));
