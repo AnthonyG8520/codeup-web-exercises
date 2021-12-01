@@ -187,4 +187,4 @@ alert(plus100(parseInt(userNumber)))
 alert(isPositive(userNumber))
 
 
-//---------
+//-----
