@@ -185,3 +185,6 @@ alert(notANumber(userNumber))
 alert(isOdd(userNumber))
 alert(plus100(parseInt(userNumber)))
 alert(isPositive(userNumber))
+
+
+//---------
