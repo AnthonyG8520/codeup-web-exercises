@@ -1,14 +1,15 @@
 //For loops
 function showMultiplicationTable(input){
     for(let i = 1; i <= 10; i++) {
-        console.log(input * i)
+        let answer = input * i
+        console.log(input + "x" + i + "=" + answer)
     }
 }
 showMultiplicationTable(5)
 
 
 for(let i = 1; i <= 10; i++){
-    var random = Math.floor((Math.random() * 181) + 20);
+    var random = Math.floor((Math.random() * 180) + 20);
     if(random % 2 === 0){
         console.log(random + " is even")
     }else console.log(random + " is odd")
