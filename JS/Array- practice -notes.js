@@ -60,6 +60,7 @@
 //     console.log(age * 2);
 // });
 
+//Methods/Manipulation
 //can pass multiple values into an array
 //adds a value to the beginning of an array
 array.unshift()
@@ -90,4 +91,6 @@ console.log(input, ...array)
 console.log(...array, input)
 //add two arrays together
 console.log([...array, ...array])
+
+
 
