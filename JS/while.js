@@ -13,6 +13,9 @@ do{
         console.log(soldCones + " cones sold.");
     }else if (soldCones > allCones){
         console.log("I don't have " + soldCones + " to sell.");
-    }else console.log("All cones have been sold");
-    allCones = allCones - soldCones
+    }
+    allCones -= soldCones
+    console.log(allCones)
 }while (allCones > 0)
+
+console.log("All cones have been sold");
