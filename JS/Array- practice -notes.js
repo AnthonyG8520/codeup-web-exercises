@@ -59,3 +59,35 @@
 // ages.forEach(function(age){
 //     console.log(age * 2);
 // });
+
+//can pass multiple values into an array
+//adds a value to the beginning of an array
+array.unshift()
+//removes a value from the beginning of an array
+array.shift()
+//adds a value to the end of an array
+array.push()
+//removes a value from the end of an array
+array.pop()
+//returns the index of the element you search for
+array.indexOf()
+// prints the index of the last time the element is in the array
+array.lastIndexOf()
+//return a sliced portion from the array/ if passed one index returns only that one/
+// if given two the first arg is where it starts slicing and the second is how many elements it slices
+array.slice()
+//reverses a given array
+array.reverse()
+// by defualt .sort method sorts strings alphabetically and sorts numbers lowest to highest
+array.sort()
+//converts an array into a string, enter a string containing a separator to use a different separator
+array.join()
+//converts a string into an array, must input the separator used in the string
+string.split()
+//you can chain multiple methods together (.sort.reverse)
+// spread operator (...) 1st shows adding to beginning 2nd adds to end
+console.log(input, ...array)
+console.log(...array, input)
+//add two arrays together
+console.log([...array, ...array])
+

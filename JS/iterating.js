@@ -66,6 +66,8 @@
     }
 
     function last(array){
-        return array.length - 0
+        let lastIndexOfArray = array.length - 1
+        return array[lastIndexOfArray]
     }
 })();
+

@@ -64,13 +64,20 @@
 // let passWord = "1234";
 // let userPassWord = prompt("Enter password.");
 //
-// !!!!!DOESNT WORK!!!!!
+
+
+//Making a prompt loop
+// var userInput = ''
+// let name = "Anthony"
+//
 // do{
-//     userPassWord
-//     if(passWord != userPassWord){
-//         alert("Wrong password");
+//     userInput = prompt ("Enter a name.")
+//     if(userInput !== name){
+//         alert ("wrong")
+//     }else{
+//         break;
 //     }
-// }while (passWord != userPassWord);
+// }while(true)
 
 
 //--For Loop--
