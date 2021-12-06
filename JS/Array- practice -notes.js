@@ -56,6 +56,7 @@
 // }
 
 // for each loop
+// can pass through the index by adding the "index" parameter in the function
 // ages.forEach(function(age){
 //     console.log(age * 2);
 // });
@@ -86,11 +87,13 @@ array.join()
 //converts a string into an array, must input the separator used in the string
 string.split()
 //you can chain multiple methods together (.sort.reverse)
-// spread operator (...) 1st shows adding to beginning 2nd adds to end
-console.log(input, ...array)
-console.log(...array, input)
-//add two arrays together
-console.log([...array, ...array])
+// // spread operator (...) 1st shows adding to beginning 2nd adds to end
+// console.log(input, ...array)
+// console.log(...array, input)
+// //add two arrays together
+// console.log([...array, ...array])
+
+
 
 
 

@@ -48,8 +48,17 @@ let dog = {
 // person.birthday ="sep,23";
 // person.isTall = true;
 
+//can add a function to an object using:
+person.sayHello = function(){
+    return "Hello, " + this.firstName + " " + this.lastName + "!"
+}
+
 //can call certain properties through
 // console.log(person.birthday.day)
+
+
+//Math Object
+
 
 
 

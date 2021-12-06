@@ -12,10 +12,10 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
-    //     let person = {
-    //         firstName: "Anthony",
-    //         lastName: "Gonzales"
-    // }
+        let person = {
+            firstName: "Anthony",
+            lastName: "Gonzales"
+    }
 
      /**
      * TODO:
@@ -27,13 +27,9 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    let person = {
-        firstName: "Anthony",
-        lastName: "Gonzales",
-        sayHello: function(){
-            return "Hello, " + this.firstName + " " + this.lastName + "!"
-        }
-    }
+     person.sayHello = function(){
+         return "Hello, " + this.firstName + " " + this.lastName + "!"
+     }
     console.log(person.sayHello())
 
 
@@ -82,7 +78,7 @@
 let books =[
         {title:"Not I", author:{firstName:"Sebastian", lastName:"Castillo"}},
         {title:"You", author:{firstName:"Charles", lastName:"Benoit"}},
-        {title:"The Debt To Pleasure:", author:{firstName:"John", lastName:"Lanchester"}},
+        {title:"The Debt To Pleasure", author:{firstName:"John", lastName:"Lanchester"}},
         {title:"How To Do Nothing", author:{firstName:"Jenny", lastName:"Odell"}},
         {title:"The Unsettlers", author:{firstName:"Mark", lastName:"Sundeen"}}
     ]
@@ -114,7 +110,7 @@ let books =[
      */
 
     for(let i = 0; i < books.length; i++){
-        console.log("(" + i + ")" + "Title: " + books[i].title + " " + "Author: " + books[i].author.firstName + " " + books[i].author.lastName)
+        console.log("Book " + (i + 1) + "\n" + "Title: " + books[i].title + "\n" + "Author: " + books[i].author.firstName + " " + books[i].author.lastName)
     }
 
     /**
@@ -127,5 +123,21 @@ let books =[
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+    var book = {title:"Not I", author:{firstName:"Sebastian", lastName:"Castillo"}
+
+    function createBook(title,firstname, lastname){
+        return {
+            title: title,
+            author: {
+                firstName: firstname,
+                lastName: lastname
+            }
+        }
+    }
+    function showBookInfo(object){
+        return this.title + this.author.firstName + " " + this.author.lastName
+    }
+
+    console.log(showBookInfo(book))
 
 })();
