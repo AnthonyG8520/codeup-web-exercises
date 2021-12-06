@@ -12,7 +12,12 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
-    /**
+    //     let person = {
+    //         firstName: "Anthony",
+    //         lastName: "Gonzales"
+    // }
+
+     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
      * the firstName and lastName properties.
@@ -21,6 +26,16 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+
+    let person = {
+        firstName: "Anthony",
+        lastName: "Gonzales",
+        sayHello: function(){
+            return "Hello, " + this.firstName + " " + this.lastName + "!"
+        }
+    }
+    console.log(person.sayHello())
+
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -36,11 +51,21 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+    shoppers.forEach(function(shopper){
+        var discount =shopper.amount - (shopper.amount * .12)
+        if(shopper.amount < 200){
+            console.log("name:" + shopper.name + " amount before discount:" + shopper.amount + " discount: 0%" + " amount after discount:" + shopper.amount)
+        }else{
+            console.log("name:" + shopper.name + " amount before discount:" + shopper.amount + " discount: 12%" + " amount after discount:" + discount)
+        }
+    });
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -54,6 +79,14 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+let books =[
+        {title:"Not I", author:{firstName:"Sebastian", lastName:"Castillo"}},
+        {title:"You", author:{firstName:"Charles", lastName:"Benoit"}},
+        {title:"The Debt To Pleasure:", author:{firstName:"John", lastName:"Lanchester"}},
+        {title:"How To Do Nothing", author:{firstName:"Jenny", lastName:"Odell"}},
+        {title:"The Unsettlers", author:{firstName:"Mark", lastName:"Sundeen"}}
+    ]
+
 
     /**
      * TODO:
@@ -79,6 +112,10 @@
      *      ---
      *      ...
      */
+
+    for(let i = 0; i < books.length; i++){
+        console.log("(" + i + ")" + "Title: " + books[i].title + " " + "Author: " + books[i].author.firstName + " " + books[i].author.lastName)
+    }
 
     /**
      * Bonus:
