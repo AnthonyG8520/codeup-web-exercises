@@ -24,8 +24,9 @@
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
-    var planets = "Mercury<br>Venus<br>Earth<br>Mars<br>Jupiter<br>Saturn<br>Uranus<br>Neptune";
-    var planets = <ul><li>Mercury</li><li>venus</li><li>Earth</li><li>Mars</li><li>Jupiter</li><li>Saturn</li><li>Uranus</li><li>Neptune</li></ul>
+    const planetWithBreakTags = planetsArray.join("<br>")
+    console.log(planetWithBreakTags)
+
 
 
 })();
