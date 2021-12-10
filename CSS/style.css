@@ -19,14 +19,14 @@ body{
 
 body{
     background-image: url("../img/simple-pattern-with-css3.png");
-    background-repeat: round;
+    background-size: cover;
 }
 
 ul li{
     list-style-type: circle;
 }
 
-table{
+table tr td{
     font-size: 18px;
     margin: 30px;
 }
