@@ -2,3 +2,21 @@
     color: purple; /* single line comment */
     text-decoration: underline;
 }
+
+#main-header{
+    text-align: center;
+}
+
+h2, h3{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+body{
+    background-image: url("../img/simple-pattern-with-css3.png");
+    background-repeat: round;
+}
