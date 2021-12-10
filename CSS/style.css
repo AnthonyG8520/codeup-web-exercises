@@ -14,9 +14,35 @@ h2, h3{
 
 body{
     background-color: lightgrey;
+    font-family:Futura;
 }
 
 body{
     background-image: url("../img/simple-pattern-with-css3.png");
     background-repeat: round;
+}
+
+ul li{
+    list-style-type: circle;
+}
+
+table{
+    font-size: 18px;
+    margin: 30px;
+}
+
+a:visited{
+color:orange;
+}
+
+a:hover{
+    color:black;
+}
+
+a:active{
+    color:purple;
+}
+
+a:link{
+    color:blue;
 }
