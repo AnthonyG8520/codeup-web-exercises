@@ -69,15 +69,85 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary float-right">Next step</a>
+                            <a href="#" class="btn btn-primary float-right">Next step ></a>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-
+                    <div class="card">
+                        <div class="card-header bg-primary text-light">Choose cheese and sauce</div>
+                        <div class="card-body">
+                            <div class="card mb-4">
+                                <div class="card-header">Cheese</div>
+                                <div class="form-group m-3">
+                                    <label for="amountCheese">How much?</label>
+                                    <select class="form-control" id="amountCheese">
+                                        <option>Light</option>
+                                        <option>Normal</option>
+                                        <option>Extra</option>
+                                        <option>Double</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">Sauce</div>
+                                <div class="form-group m-3">
+                                    <label for="typeSauce">What type?</label>
+                                    <select class="form-control" id="typeSauce">
+                                        <option>Tomato Sauce</option>
+                                        <option>Marinara Sauce</option>
+                                        <option>BBQ Sauce</option>
+                                        <option>Alfredo Sauce</option>
+                                    </select>
+                                </div>
+                                <hr class="m-0">
+                                <div class="form-group m-3">
+                                    <label for="amountSauce">How much?</label>
+                                    <select class="form-control" id="amountSauce">
+                                        <option>Light</option>
+                                        <option>Normal</option>
+                                        <option>Extra</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="btn-group float-right" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-primary">< Previous Step</button>
+                                <button type="button" class="btn btn-primary">Next Step ></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-
+                    <div class="card">
+                        <div class="card-header bg-primary text-light">Choose toppings</div>
+                        <div class="card-body">
+                            <div class="card mb-4">
+                                <div class="card-header">Choose Meats</div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><input type="checkbox" aria-label="Checkbox for following text input"> Beef</li>
+                                    <li class="list-group-item"><input type="checkbox" aria-label="Checkbox for following text input"> Ham</li>
+                                    <li class="list-group-item"><input type="checkbox" aria-label="Checkbox for following text input"> Philly Steak</li>
+                                    <li class="list-group-item"><input type="checkbox" aria-label="Checkbox for following text input"> Bacon</li>
+                                </ul>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">Choose Non-Meats</div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><input type="checkbox" aria-label="Checkbox for following text input"> Green Peppers</li>
+                                    <li class="list-group-item"><input type="checkbox" aria-label="Checkbox for following text input"> Mushrooms</li>
+                                    <li class="list-group-item"><input type="checkbox" aria-label="Checkbox for following text input"> Onions</li>
+                                    <li class="list-group-item"><input type="checkbox" aria-label="Checkbox for following text input"> Jalapeno Peppers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary float-right">Checkout <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
