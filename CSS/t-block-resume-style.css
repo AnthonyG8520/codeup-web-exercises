@@ -1,0 +1,29 @@
+/*style sheet for t-block-resume.html*/
+
+.contacts{
+    text-align: center;
+    font-family: "Oriya MN";
+}
+
+#contact-list{
+    border-bottom: 3px solid limegreen;
+    margin-bottom: 30px;
+}
+
+.details{
+    margin-bottom: 20px;
+}
+
+h4{
+    color: #3B94D9;
+    font-weight: bold;
+}
+
+.title{
+    font-family:;
+}
+
+
+
+
+
