@@ -104,8 +104,20 @@
 // (CHALLENGE) Write a function that takes in an array of user objects, increases the value of averageAnnualPizzasOrdered by 5 for each user and returns the average annual pizzas ordered across all users, after this adjustment.
 //----------------------------------------------------------
 
-function triple(x){
-    return x * 3;
+// 01/14 warmup
+var names = ["Ryan", "Kieran", "Jason", "Mary", "Jo", "Jake"]
+// console.log(names[1].length)
+for (var i = 0; i < names.length; i++){
+    if (names[i].length == 4) {
+        console.log(names[i])
+    }
 }
-console.log(triple('3'));
+
+
+
+
+// function triple(x){
+//     return x * 3;
+// }
+// console.log(triple('3'));
 
