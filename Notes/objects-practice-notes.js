@@ -16,7 +16,8 @@ let birthdayObject = {
 }
 
 let person = {
-    name: "Anthony",
+    firstName: "Anthony",
+    lastName: "Gonzales",
     birthday: birthdayObject,
     isTall: false,
 };
@@ -53,13 +54,12 @@ person.sayHello = function(){
     return "Hello, " + this.firstName + " " + this.lastName + "!"
 }
 
+console.log(person.sayHello())
+
 //can call certain properties through
 // console.log(person.birthday.day)
 
 
 //Math Object
-
-
-
 
 
