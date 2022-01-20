@@ -5,18 +5,64 @@
     <title>Title</title>
 </head>
 <body>
+<h1 class="codeup" id="heading">jquery exercise</h1>
+<ul class="codeup">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+<div id="first-div" class="codeup">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, quae!</p>
+</div>
+<p class="" id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur dolorem
+    ducimus illum
+    ipsum, nisi perspiciatis reprehenderit sunt temporibus veniam.</p>
 
 
 <script src="JS/jquery-2.2.4.js"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
-  jQuery(window).load(function () {
-    alert('page is loaded');
+    // JQUERY INTRODUCTION
 
-    setTimeout(function () {
-      alert('page is loaded and 1 minute has passed');
-    }, 60000);
+    // $(window).load(function () {
+    //   alert('page is loaded');
+    //
+    //   setTimeout(function () {
+    //     alert('page is loaded and 1 minute has passed');
+    //   }, 60000);
+    //
+    // });
 
-  });
+    // JQUERY SELECTORS
+
+    // alert($('ul').text())
+    // alert($('#paragraph').text())
+    // $('.codeup').css('border', '1px solid red')
+    // $('ul li').css('font-size', '20px')
+    // $('#heading, p, ul li').effect('highlight', {}, 20000)
+    // alert($('h1').text())
+
+    //JQUERY MOUSE EVENTS
+
+    $('h1').click(function () {
+        $(this).css('background', 'red')
+    });
+
+    $('p').dblclick(function () {
+        $(this).css('font-size', '18px')
+    });
+
+    $('ul li').hover(function () {
+            $(this).css('color', 'red');
+        },
+        function () {
+            $(this).css('color', 'black');
+        }
+    );
+
+
 </script>
 </body>
 </html>
