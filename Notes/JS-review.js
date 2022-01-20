@@ -105,13 +105,27 @@
 //----------------------------------------------------------
 
 // 01/14 warmup
-var names = ["Ryan", "Kieran", "Jason", "Mary", "Jo", "Jake"]
-// console.log(names[1].length)
-for (var i = 0; i < names.length; i++){
-    if (names[i].length == 4) {
-        console.log(names[i])
+// var names = ["Ryan", "Kieran", "Jason", "Mary", "Jo", "Jake"]
+// // console.log(names[1].length)
+// for (var i = 0; i < names.length; i++){
+//     if (names[i].length == 4) {
+//         console.log(names[i])
+//     }
+// }
+
+
+//01/20 warmup
+function checkLetters (str){
+    for (var i = 0; i < str.length; i++){
+        if (str.charAt(i) === str.charAt(i).toUpperCase()){
+            console.log(str.charAt(i) + " is uppercase.")
+        }else{
+            console.log(str.charAt(i) + " is lowercase")
+        }
     }
 }
+
+checkLetters("SmjhtDGwedGfHghj")
 
 
 
