@@ -12,5 +12,23 @@
 
 <script src="../JS/jquery-2.2.4.js"></script>
 <script src="Jquery-intro-notes.js"></script>
+<script>
+    // TODO: when the user types the letter 'a', pop up an alert that says "Welcome!"
+    // TODO: when the user types the letter 'c', pop up a confirm that says "Logout?"
+    // TODO: when the user types the letter 'p', prompt the user to enter their username
+
+    $(document).keydown(function(e) {
+        console.log(e.key);
+        if (e.key === "a") {
+            alert('Welcome!');
+        }else if (e.key === "c"){
+            confirm('Logout?')
+        }else if(e.key === "p"){
+            prompt('Enter your username.')
+        }
+    });
+
+
+</script>
 </body>
 </html>

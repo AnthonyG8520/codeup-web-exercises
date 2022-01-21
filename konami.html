@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Konami Code</title>
+    <title>Konami Code</title>
 </head>
 <body>
 <h1>Konami Code</h1>
 
 <script src="JS/jquery-2.2.4.js"></script>
 <script>
-  "use strict";
-  let konamiCode = ['38', '38', '40', '40', '37', '39', '37', '39', '66', '65', '13']
-  let keyPressed = $(document).keyup(function(event){
-    console.log(event.keyCode);
-  });
+    "use strict";
+    $(document).keyup(function (event) {
+        console.log(event.keyCode);
+    });
+    let konamiCode = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13]
+    let keyCount = 0
 
+    console.log(keyCount)
+    console.log(konamiCode[keyCount])
 
+    function checkCode(e) {
+        let keyPressed = e.keyCode
+        if (keyPressed === konamiCode[keyCount]) {
+            keyCount++
+            console.log(keyCount);
+            console.log(konamiCode[keyCount])
 
+            if (keyCount === konamiCode.length) {
+                alert("You have added 30 lives!")
+                keyCount = 0
+            }
+        } else {
+            keyCount = 0
+            alert('Cheatcode failed!')
+        }
+    }
 
-
+    $(document).keydown(checkCode)
 
 </script>
 </body>
