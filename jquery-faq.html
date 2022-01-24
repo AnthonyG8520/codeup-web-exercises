@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .invisible{
+        .invisible {
             visibility: hidden;
+        }
+        .highlight{
+            background-color: yellow;
         }
     </style>
 </head>
 <body>
 <dl>
     <dt>How did Yellowstone get its name?</dt>
-    <dd class="invisible">Yellowstone National Park is named after the Yellowstone River, the major river running through the park.</dd>
+    <dd class="invisible">Yellowstone National Park is named after the Yellowstone River, the major river running
+        through the park.
+    </dd>
 
     <dt>Is Yellowstone the largest national park?</dt>
     <dd class="invisible">No. More than half of Alaska’s national park units are larger.</dd>
@@ -21,7 +26,8 @@
     <dd class="invisible">Yellowstone is in the top five national parks for number of recreational visitors.</dd>
 
     <dt>How many rangers work in Yellowstone?</dt>
-    <dd class="invisible">Approximately 738 people work for the National Park Service during the peak summer season.</dd>
+    <dd class="invisible">Approximately 738 people work for the National Park Service during the peak summer season.
+    </dd>
 
     <dt>Can we swim in rivers and lakes?</dt>
     <dd class="invisible">Swimming is not recommended because most lakes and streams are dangerously cold.</dd>
@@ -33,22 +39,75 @@
     <dd class="invisible">Eagle Peak in the southeastern part of Yellowstone is the highest at 11,358 feet.</dd>
 
     <dt>How did Mt. Washburn form?</dt>
-    <dd class="invisible">It is a remnant of an extinct volcano from the Absaroka Volcanics of about 50 million years ago.</dd>
+    <dd class="invisible">It is a remnant of an extinct volcano from the Absaroka Volcanics of about 50 million years
+        ago.
+    </dd>
 
     <dt>Does Yellowstone include a federally designated wilderness?</dt>
-    <dd class="invisible">No. Most of the park was recommended for this designation in 1972, but Congress has not acted on the recommendation.</dd>
+    <dd class="invisible">No. Most of the park was recommended for this designation in 1972, but Congress has not acted
+        on the recommendation.
+    </dd>
 
     <dt>What is the difference between a national park and a national forest?</dt>
-    <dd class="invisible">National parks are administered by the Department of the Interior and national forests by the Department of Agriculture.</dd>
+    <dd class="invisible">National parks are administered by the Department of the Interior and national forests by the
+        Department of Agriculture.
+    </dd>
 </dl>
 <button id="toggle">invisible</button>
+<h3>lorem</h3>
+<ul>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li class="highlight">Lorem ipsum dolor sit amet.</li>
+</ul>
+<h3>lorem</h3>
+<ul>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li class="highlight">Lorem ipsum dolor sit amet.</li>
+</ul>
+<h3>lorem</h3>
+<ul>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li class="highlight">Lorem ipsum dolor sit amet.</li>
+</ul>
+
+<button id="last-li">Highlight last li</button>
 
 
 <script src="JS/jquery-2.2.4.js"></script>
 <script>
-    $('#toggle').click(function(){
+    //essential methods/ attributes and CSS
+    $('#toggle').click(function () {
         console.log('clicked')
         $('dd').toggleClass('invisible')
+    });
+
+    //traversing exercise
+    //applies class without toggle-----------
+    // $('#last-li').click(function() {
+    //     $('ul').each(function () {
+    //         $(this).children().last().css('background-color', 'yellow');
+    //     });
+    // });
+    //-------------------------------------------
+
+    $('#last-li').click(function() {
+        $('ul').each(function () {
+            $(this).children().last().toggleClass('highlight');
+        });
+    });
+
+    $('h3').click(function(){
+        $(this).next().children().css('font-weight', 'bold');
+    });
+
+    $('li').click(function(){
+        $(this).parent().children().first().css('color', 'blue')
     });
 </script>
 </body>
