@@ -56,13 +56,44 @@ $('p, ul li').css
 $('*').css
 
 
+//---------------Essential Methods jquery-------------------
+//give all paragraphs a border
+//grab all the p elements
+//change the css
+
+// setting info to element
+$('.border').css('border', '2px solid black');
 
 
+//change h1 to say happy monday
+//grab the element
+//chain a method onto that element
+//pass in the value you want to change it to
+
+// .html() is SETTING info
+$('h1').html('Happy Monday')
+
+// .html() will also return the value of the content inside of the element selected if passed no value
+//.html() is GETTING info
+$('h1').html()
 
 
+//add a class of border to my h2
+$('#red').addClass('border'); //SETTER
+//removing class from #red
+$('#red').removeClass(); // (re)SETTER
 
 
+//.toggleClass()
+// toggle our h1 to be highlighted on an event
+//grab the element you want to change
+//grab the element thats listening for the click
+//change the css (.css())
+//toggle it
 
+$('h1').click(function(){
+    $(this).toggleClass('highlight') //can use (this) when the function is inside where the element has already been called
+})
 
 
 
