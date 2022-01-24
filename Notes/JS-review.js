@@ -126,12 +126,17 @@ function checkLetters (str){
 }
 
 checkLetters("SmjhtDGwedGfHghj")
+//-------------------------------
+
+//01/24 warmup NOT FINISHED
+let num = "123567853"
+function sum(string) {
+    let arrayNum = string.split()
+    for(var i = 0; i <= arrayNum.length; i++){
+
+    }
+}
 
 
 
-
-// function triple(x){
-//     return x * 3;
-// }
-// console.log(triple('3'));
 
