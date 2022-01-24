@@ -93,7 +93,50 @@ $('#red').removeClass(); // (re)SETTER
 
 $('h1').click(function(){
     $(this).toggleClass('highlight') //can use (this) when the function is inside where the element has already been called
-})
+});
+
+
+//---------------Traversing--jquery---------------------
+//.children applies to all children under the grabbed element
+
+
+//grab the next element in line use .next()
+//.next() // SETTER
+//setting a css property to the next element after whats being called
+$('#pink').next().css('border', '2px solid black');
+
+//grab the element first
+//use .children() to traverse down multiple levels depending on how many times you apply .children()
+$('#first').children().children.css('border', '2px solid black');
+
+//.parent()
+
+$('#pink').parent().css('border', '2px solid black');
+
+//change properties for every element that is selected // can apply conditionals to select certain index
+$('li').each(function(index){
+    if(index % 2 == 0) {
+        $(this).css('font-size', '24px');
+    }
+});
+
+//.first() .last() method
+
+$('li').first().css('background-color', 'blue')
+$('li').last().css('background-color', 'green')
+
+
+//grabbing parent of last item
+
+$('li').last().parent()
+
+
+//reduce method
+
+const array1 = [1, 2, 3, 4];
+const reducer = (previousValue, currentValue) => previousValue + currentValue
+
+
 
 
 
