@@ -125,11 +125,11 @@ function checkLetters (str){
     }
 }
 
-checkLetters("SmjhtDGwedGfHghj")
+// checkLetters("SmjhtDGwedGfHghj")
 //-------------------------------
 
 //01/24 warmup NOT FINISHED
-let num = "123567853"
+// let num = "123567853"
 function sum(string) {
     let arrayNum = string.split()
     for(var i = 0; i <= arrayNum.length; i++){
@@ -137,6 +137,19 @@ function sum(string) {
     }
 }
 
+//01/25 warmup NOT FINISHED
+function howManyRepeated(str){
+    const result = [];
+    const strArr = str.toLowerCase().split("").sort().join("").match(/(.)\1+/g);
 
+    if (strArr != null) {
+        strArr.forEach((elem) => {
+            result.push(elem[0]);
+        });
+    }
+    return result;
+};
+
+console.log(howManyRepeated("36778922"));
 
 
