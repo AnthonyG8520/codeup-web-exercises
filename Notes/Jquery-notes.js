@@ -207,9 +207,9 @@ $.ajax("url").fail(function(){
 //change its src attribute and give it a value
 //retrieve data from API
 // handle the response
-//retrieve the actual item we need from the resonse // data.message
+//retrieve the actual item we need from the response // data.message
 // --> string
-//passs the string recieved into the value of src being changed
+//passes the string recieved into the value of src being changed
 
 
 //sends the request
@@ -225,6 +225,31 @@ $.ajax("https://dog.ceo/api/breeds/image/random").done(function(data, status){
 
 $.ajax("url").always(function() {
     // .always accepts a function that tells what to do no matter the outcome of the request
+});
+
+
+//adding ajax pulled info into html
+
+//GET the url - using ajax request
+//loop through the array of data
+    //forEach
+    //jquery .each()
+
+//get the actual names of the comments
+//.done() method -- to capture the data when it's returned
+//append to element
+//select /find the element that we want to append to
+//create and element
+
+$.get("url").done(function(){
+    console.log(data)
+    //here we have access to data returned
+    $.each(data, function(i, comment){
+        let newEl = `<h1>${comment.name}</h1>`
+        // select element we're appending to
+        //append whatever we pass in as a child
+        $(".container").append(newEl)
+    })
 })
 
 
