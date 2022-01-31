@@ -41,9 +41,11 @@
 <!-- mapbox geocoder -->
 <script src="JS/mapbox-geocoder-utils.js"></script>
 
+<script src=".idea/keys.js"></script>
+
 <!-- Custom JS -->
 <script>
-  mapboxgl.accessToken = "TOKEN HERE";
+  mapboxgl.accessToken = mapbox_maps_key;
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
