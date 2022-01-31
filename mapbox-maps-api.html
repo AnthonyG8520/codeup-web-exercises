@@ -19,6 +19,13 @@
   <input placeholder="Enter Address" id="search" type="text">
   <button id="submit">Submit</button>
 </div>
+<label for="zoom">Zoom Level: </label>
+<select id="zoom">
+  <option value="5">5</option>
+  <option selected="selected" value="10">10</option>
+  <option value="15">15</option>
+  <option value="20">20</option>
+</select>
 
 <h1>My First Mapbox Map!</h1>
 
@@ -36,7 +43,7 @@
 
 <!-- Custom JS -->
 <script>
-  mapboxgl.accessToken = "pk.eyJ1IjoiYW50aG9ueWc4NTIwIiwiYSI6ImNreXhoY2k0ZTAwZmcyb254eGM5d2FuamkifQ._pS4DmUfYEXvyIKzxq1wTw";
+  mapboxgl.accessToken = "TOKEN HERE";
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
@@ -45,9 +52,9 @@
   });
 
   let favFoods = [
-    {address: "17311 Bulverde Rd, San Antonio, TX 78247", popupHTML: "<P>Whataburger</P>"},
+    {address: "17311 Bulverde Rd, San Antonio, TX 78247", popupHTML: "<img width='100px' src='img/whataburger.png'><P>Whataburger</P>"},
     {address: "16910 US 281 North, San Antonio, TX 78232", popupHTML: "<p>Saltgrass Steakhouse</p>"},
-    {address: "3755 Thousand Oaks Dr, San Antonio, TX 78247", popupHTML: "<p>Eddies Taco House</p>"}
+    {address: "3755 Thousand Oaks Dr, San Antonio, TX 78247", popupHTML: "<img width='100px' src='img/eddies-taco-house.png' alt=''><p>Eddies Taco House</p>"}
   ];
 
   //creates new marker and popup
@@ -80,6 +87,11 @@
             .addTo(map)
     });
   });
+
+  $("#zoom").change(function(){
+    map.setZoom($("#zoom").val())
+  });
+
   // //using mapbox with geocode functionality
   // geocode("San Antonio, TX 78247", mapboxgl.accessToken).then(function(result) {
   //   console.log(result);
