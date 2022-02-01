@@ -1,4 +1,11 @@
-#day-weather{
-    margin: 30px;
-    display: inline-block;
+#map{
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
 }
+
+#weather-icon{
+    height: 80px;
+    width: 80px;
+}
+
