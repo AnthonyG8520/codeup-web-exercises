@@ -22,20 +22,27 @@ function getWeather(lat, lng) {
         console.log(data)
         for (var i = 0; i <= 4; i++) {
             let date = timeConverter(data.daily[i].dt);
+            let chanceOfRain = Math.round(data.daily[i].pop * 100);
             let weatherEntry = `<div class="col card mx-3" id="day-weather">
                                     <div class="card-header">${date}</div>
                                     <img id="weather-icon" src="https://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png" alt="">
                                     <div class="card-title">${data.daily[i].weather[0].description}</div>
                                     <div class="card-text">Low: ${data.daily[i].temp.min} / High: ${data.daily[i].temp.max}</div>
+                                    <div class="card-text">Chance Of Rain: ${chanceOfRain}%</div>
                                     <div class="card-text">Humidity: ${data.daily[i].humidity}%</div>
                                 </div>`
             $("#weather").append(weatherEntry);
         }
+        reverseGeocode({lng:lng, lat:lat}, mapboxgl.accessToken).then(function(result){
+            $("#weather-location").empty()
+            $("#weather-location").append(result)
+        });
+        $("#coordinates").remove()
+        $(".mapboxgl-canvas-container").append(`<div id="coordinates">Longitude: ${lng}<br />Latitude: ${lat}</div>`)
     });
-}
+};
 
 getWeather(29.4241, -98.4936);
-
 
 $(".mapboxgl-canvas").click(function() {
     $(".mapboxgl-marker").remove()
@@ -44,6 +51,8 @@ $(".mapboxgl-canvas").click(function() {
     })
         .setLngLat([-98.4916, 29.4252])
         .addTo(map);
+        map.setCenter([-98.4916, 29.4252])
+        map.setZoom(10)
 
     function onDragEnd() {
         const lngLat = marker.getLngLat();
@@ -70,3 +79,4 @@ $("#submit").click(function () {
         getWeather(result[1], result[0])
     });
 });
+
