@@ -35,7 +35,7 @@ function getWeather(lat, lng) {
         }
         reverseGeocode({lng:lng, lat:lat}, mapboxgl.accessToken).then(function(result){
             $("#weather-location").empty()
-            $("#weather-location").append(result)
+            $("#weather-location").append(`<p class="m-0">Weather For: </p>${result}`)
         });
         $("#coordinates").remove()
         $(".mapboxgl-canvas-container").append(`<div id="coordinates">Longitude: ${lng}<br />Latitude: ${lat}</div>`)

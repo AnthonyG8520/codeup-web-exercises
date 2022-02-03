@@ -23,3 +23,27 @@
     display: block;
 }
 
+#navbar{
+    max-width: 100%;
+    background-color: rgb(37, 76, 175);
+    max-height: 80px;
+}
+
+#weather-location{
+    font-size: 18px;
+}
+
+#nav-title{
+    font-size: 28px;
+}
+
+#search-bar, #weather-location{
+    text-align: center;
+}
+
+#search-city{
+    width: 240px;
+    border-radius: 15px;
+}
+
+
