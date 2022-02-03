@@ -27,7 +27,7 @@ function getWeather(lat, lng) {
                                     <div class="card-header">${date}</div>
                                     <img id="weather-icon" src="https://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png" alt="">
                                     <div class="card-title">${data.daily[i].weather[0].description}</div>
-                                    <div class="card-text">Low: ${data.daily[i].temp.min} / High: ${data.daily[i].temp.max}</div>
+                                    <div class="card-text">${data.daily[i].temp.min}°F / ${data.daily[i].temp.max}°F</div>
                                     <div class="card-text">Chance Of Rain: ${chanceOfRain}%</div>
                                     <div class="card-text">Humidity: ${data.daily[i].humidity}%</div>
                                 </div>`
