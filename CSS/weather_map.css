@@ -1,6 +1,14 @@
+::placeholder{
+    color: white;
+    text-align: center;
+}
+
+
+
+
 #map{
     width: 100%;
-    height: 500px;
+    height: 375px;
     border: 2px solid black;
 }
 
@@ -22,19 +30,24 @@
     border-radius: 3px;
     display: block;
 }
+body{
+    background-image: linear-gradient(#1284a6, #ffffff);
+}
 
 #navbar{
     max-width: 100%;
-    background-color: rgb(37, 76, 175);
+    background-color: rgba(44, 96, 164, 0.91);
     max-height: 80px;
 }
 
 #weather-location{
     font-size: 18px;
+    color: white;
 }
 
 #nav-title{
     font-size: 28px;
+    color: white;
 }
 
 #search-bar, #weather-location{
@@ -42,8 +55,19 @@
 }
 
 #search-city{
-    width: 240px;
+    width: 320px;
     border-radius: 15px;
+    background-color: rgb(72, 149, 169);
+    border: 1px solid #4895a9;
+    color: white;
+    text-align: center;
 }
 
+#submit{
+    width: 20px;
+    height: auto;
+    position: relative;
+    right: 35px;
+    top: 3px;
+}
 
