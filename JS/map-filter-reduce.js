@@ -57,8 +57,8 @@ console.log(longestEmail)
 
 
 let userString = users.reduce((previousValue, currentValue) => {
-    return previousValue + ", " + currentValue.name
-}, '')
+    return previousValue + currentValue.name + ', '
+}, 'Your instructors are: ')
 console.log(userString)
 
 
