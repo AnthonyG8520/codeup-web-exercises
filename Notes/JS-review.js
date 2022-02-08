@@ -150,6 +150,13 @@ function howManyRepeated(str){
     return result;
 };
 
-console.log(howManyRepeated("36778922"));
+// console.log(howManyRepeated("36778922"));
+
+//02/08 warmup
+let numbers = [1,2,3,2,4,5,1]
+
+let noDups = numbers.filter(number => number )
+console.log(noDups)
+
 
 
