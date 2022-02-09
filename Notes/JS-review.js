@@ -159,4 +159,25 @@ let noDups = numbers.filter(number => number )
 console.log(noDups)
 
 
+//02/09 warmup
+
+function isVowel(str) {
+    str = str.toUpperCase();
+    return str == "A" || str == "E" || str == "I" || str == "O" || str == "U";
+}
+
+function countVowels(str)
+{
+    var count = 0;
+    for (var i = 0; i < str.length; i++)
+        if (isVowel(str[i]))
+            ++count;
+    return count;
+}
+
+console.log(countVowels('anthony'))
+
+
+
+
 
