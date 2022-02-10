@@ -1,3 +1,7 @@
+// users/${username}/events/public
+// result[0].created_at
+
+
 function getLastCommit(owner, repo) {
     fetch(`https://api.github.com/repos/${owner}/${repo}/commits`, {headers: {"Authorization": github_api_key}})
         .then(res => res.json())

@@ -152,7 +152,7 @@ function howManyRepeated(str){
 
 // console.log(howManyRepeated("36778922"));
 
-//02/08 warmup
+//02/08 warmup -- not done
 let numbers = [1,2,3,2,4,5,1]
 
 let noDups = numbers.filter(number => number )
@@ -176,6 +176,10 @@ function countVowels(str)
 }
 
 console.log(countVowels('anthony'))
+
+//02/10 warmup
+
+
 
 
 
