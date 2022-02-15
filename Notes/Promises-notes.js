@@ -91,5 +91,3 @@ myPromise.catch(() => console.log('rejected!'));
 
 
 
-
-
