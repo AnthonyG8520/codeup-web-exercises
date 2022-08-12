@@ -26,7 +26,27 @@ function XO(str){
     return oCount === xCount
 }
 
+
+function sortOnlyOdds(arr){
+    let oddsIteration = 0
+    let oddsSorted = [];
+    let odds = arr.filter(n => n % 2 !== 0).sort((a,b) => a-b);
+    arr.forEach(num => {
+        if(num % 2 === 0){
+            oddsSorted.push(num)
+        }
+        else {
+            oddsSorted.push(odds[oddsIteration])
+            oddsIteration++
+        }
+    })
+    return oddsSorted
+}
+
 console.log(disemvowel("Hello"));
 
 console.log(XO("XOooxx"))
+
+console.log(sortOnlyOdds([11,2,8,3,4,5,1]))
+
 
