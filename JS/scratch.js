@@ -43,10 +43,20 @@ function sortOnlyOdds(arr){
     return oddsSorted
 }
 
-console.log(disemvowel("Hello"));
+// console.log(disemvowel("Hello"));
+//
+// console.log(XO("XOooxx"))
+//
+// console.log(sortOnlyOdds([11,2,8,3,4,5,1]))
 
-console.log(XO("XOooxx"))
+const re = /(\w+)\s(\w+)/;
 
-console.log(sortOnlyOdds([11,2,8,3,4,5,1]))
+const str = 'John Smith';
+
+const newstr = str.replace(re, '$2, $1');
+
+console.log(newstr);  // Smith, John
+
+
 
 
