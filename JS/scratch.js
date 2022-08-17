@@ -49,13 +49,17 @@ function sortOnlyOdds(arr){
 //
 // console.log(sortOnlyOdds([11,2,8,3,4,5,1]))
 
-const re = /(\w+)\s(\w+)/;
+let re = /abc/;
 
-const str = 'John Smith';
+let newArr = re.exec("habco");
 
-const newstr = str.replace(re, '$2, $1');
+console.log(newArr)
 
-console.log(newstr);  // Smith, John
+//following regex simple character with * looks for zero or more of that character instead of just one
+let myArr = /ab*c/.exec("bcabbbbbcdca");
+
+console.log(myArr)
+
 
 
 
