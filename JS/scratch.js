@@ -49,17 +49,6 @@ function sortOnlyOdds(arr){
 //
 // console.log(sortOnlyOdds([11,2,8,3,4,5,1]))
 
-let re = /abc/;
-
-let newArr = re.exec("habco");
-
-console.log(newArr)
-
-//following regex simple character with * looks for zero or more of that character instead of just one
-let myArr = /ab*c/.exec("bcabbbbbcdca");
-
-console.log(myArr)
-
 
 
 
