@@ -43,11 +43,29 @@ function sortOnlyOdds(arr){
     return oddsSorted
 }
 
+
+// accepts a number in string format
+function formatPhoneNumber(str){
+    return str.replace(/(\d{3})(\d{3})(\d*)/, "($1)-$2-$3")
+}
+
+
+//accepts a number in array format
+function arrToPhoneNumber(arr){
+    return arr.join('').replace(/(\d{3})(\d{3})(\d*)/, "($1)-$2-$3")
+}
+
+
+
 // console.log(disemvowel("Hello"));
 //
 // console.log(XO("XOooxx"))
 //
 // console.log(sortOnlyOdds([11,2,8,3,4,5,1]))
+//
+// console.log(formatPhoneNumber("2103558199"))
+//
+// console.log(arrToPhoneNumber([2,1,0,3,5,5,8,1,9,9]))
 
 
 
