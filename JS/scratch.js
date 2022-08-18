@@ -58,11 +58,14 @@ function arrToPhoneNumber(arr){
 
 function spinWords(string){
     let newStr = ""
-    let currentWord = ""
-
-
-
-
+    let strArr = string.split(" ")
+    for(let i = 0; i < strArr.length; i++){
+        if(strArr[i].length >= 5){
+            newStr += strArr[i].split("").reverse().join("") + " "
+        }
+        else newStr += strArr[i] + " "
+    }
+    return newStr.trim()
 }
 
 
@@ -75,6 +78,8 @@ function spinWords(string){
 // console.log(formatPhoneNumber("2103558199"))
 //
 // console.log(arrToPhoneNumber([2,1,0,3,5,5,8,1,9,9]))
+//
+// console.log(spinWords("Welcome back from wherever"));
 
 
 
