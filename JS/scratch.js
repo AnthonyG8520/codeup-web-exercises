@@ -56,6 +56,15 @@ function arrToPhoneNumber(arr){
 }
 
 
+function spinWords(string){
+    let newStr = ""
+    let currentWord = ""
+
+
+
+
+}
+
 
 // console.log(disemvowel("Hello"));
 //
