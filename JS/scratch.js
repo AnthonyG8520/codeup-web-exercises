@@ -1,3 +1,5 @@
+"use strict";
+
 function disemvowel(str){
     let checkStr = str.toLowerCase();
     let newStr = "";
@@ -68,6 +70,25 @@ function spinWords(string){
     return newStr.trim()
 }
 
+function splitWords(str){
+    let strArr = str.match(/.{1,2}/g)
+    let newArr = []
+
+    if(str.length === 0){
+        return newArr
+    }else {
+        strArr.forEach(function (string) {
+            if (string.length === 1) {
+                string += "_"
+                newArr.push(string)
+            } else {
+                newArr.push(string)
+            }
+        })
+        return newArr
+    }
+}
+
 
 // console.log(disemvowel("Hello"));
 //
@@ -80,8 +101,7 @@ function spinWords(string){
 // console.log(arrToPhoneNumber([2,1,0,3,5,5,8,1,9,9]))
 //
 // console.log(spinWords("Welcome back from wherever"));
-
-
-
+//
+// console.log(splitWords("abc"))
 
 
