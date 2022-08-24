@@ -70,6 +70,7 @@ function spinWords(string){
     return newStr.trim()
 }
 
+
 function splitWords(str){
     let strArr = str.match(/.{1,2}/g)
     let newArr = []
@@ -90,6 +91,20 @@ function splitWords(str){
 }
 
 
+//this function finds the first number whos first and last index are the same making it the unique number in the arr
+function findUniq(arr) {
+    return arr.find(n => arr.indexOf(n) === arr.lastIndexOf(n));
+}
+
+
+//arr is sorted first to get arr in numerical order then if the unique number is smaller than the rest arr[0] is returned since the arr was sorted in numerical order
+// and the smallest would be at the front but if the unique number is larger than the rest it will end up at the end and arr.pop will return it
+// function findUniq(arr) {
+//     arr.sort((a,b)=>a-b);
+//     return arr[0]==arr[1]?arr.pop():arr[0]
+// }
+
+
 // console.log(disemvowel("Hello"));
 //
 // console.log(XO("XOooxx"))
@@ -103,5 +118,5 @@ function splitWords(str){
 // console.log(spinWords("Welcome back from wherever"));
 //
 // console.log(splitWords("abc"))
-
-
+//
+// console.log(findUniq([88, 76, 88]));
