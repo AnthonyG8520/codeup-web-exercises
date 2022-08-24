@@ -105,6 +105,16 @@ function findUniq(arr) {
 // }
 
 
+function moveZeroes(arr){
+    let newArr = arr.filter(n => n !== 0)
+    let zeroArr= arr.filter(n => n === 0)
+
+    zeroArr.forEach(z => newArr.push(z))
+
+    return newArr
+}
+
+
 // console.log(disemvowel("Hello"));
 //
 // console.log(XO("XOooxx"))
@@ -120,3 +130,5 @@ function findUniq(arr) {
 // console.log(splitWords("abc"))
 //
 // console.log(findUniq([88, 76, 88]));
+//
+// console.log(moveZeroes([0,1,5,3,0,89]))
