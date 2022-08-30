@@ -114,6 +114,37 @@ function moveZeroes(arr){
     return newArr
 }
 
+function isValidIP(str){
+    let ipNumArr = str.split(".")
+
+    if(ipNumArr.length !== 4){
+        return false
+    }else if(str.length === 0){
+        return false
+    }
+
+    for(let i = 0; i < ipNumArr.length -1; i++){
+        let currentNum = ipNumArr[i]
+
+        if (currentNum.startsWith("0")) {
+            return false
+            break;
+        }
+        else if(parseInt(currentNum) > 255 || parseInt(currentNum) < 0){
+            return false
+            break;
+        }else if(isNaN(ipNumArr[i])){
+            return false
+            break;
+        }else if(ipNumArr[i].indexOf(" ") !== -1){
+            return false
+            break;
+        }
+    }
+
+    return true
+}
+
 
 // console.log(disemvowel("Hello"));
 //
@@ -132,3 +163,6 @@ function moveZeroes(arr){
 // console.log(findUniq([88, 76, 88]));
 //
 // console.log(moveZeroes([0,1,5,3,0,89]))
+//
+// console.log(isValidIP("12.34.56"))
+
